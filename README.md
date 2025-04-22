@@ -12,13 +12,13 @@
 
 - This file handles the logic for test-related requests.
 - Replace the existing code with the updated controller logic.
-- Ensure the controller methods (e.g., `hello`) are properly implemented and handle the required business logic.
+- Ensure the controller methods (e.g., `getUsers`) are properly implemented and handle the required business logic.
 
 ### 3. Update `src/services/testService.js`
 
 - This file provides services for the test module.
 - Replace the existing code with the updated service logic.
-- Ensure the service methods (e.g., `greet`) are implemented to handle the required operations.
+- Ensure the service methods (e.g., `getUsers`) are implemented to handle the required operations.
 
 ### 4. Update `src/requests/v1/testRequest.js`
 

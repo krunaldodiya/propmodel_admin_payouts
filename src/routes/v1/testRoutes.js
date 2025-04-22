@@ -1,7 +1,7 @@
 /**********************************
  * Desc: Define routes for test module.
  * Auth: Krunal Dodiya
- * Date: 09/04/2025
+ * Date: 22/04/2025 (Updated)
  **********************************/
 
 import express from "express";
@@ -14,6 +14,7 @@ import testController from "../../controllers/v1/testController.js";
 
 const router = express.Router();
 
-router.get("/test", tokenValidation, testController.hello);
+// GET endpoint for fetching users with cursor-based pagination
+router.get("/users", tokenValidation, testController.getUsers);
 
 export default router;

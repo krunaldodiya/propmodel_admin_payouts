@@ -9,6 +9,7 @@ import { validateEnv } from "propmodel_api_core";
 import requiredEnvVars from "./config/envVariable.js";
 
 import testRoutes from "./routes/v1/testRoutes.js";
+import payoutRoutes from "./routes/v1/payoutRoutes.js";
 
 // Load environment variables from .env file
 dotenv.config();
@@ -36,6 +37,7 @@ app.use(responseHandler);
 
 // Load all routes in routes/v1
 app.use("/api/v1", testRoutes);
+app.use("/api/v1", payoutRoutes);
 
 // Error handling middleware
 // This middleware catches any errors thrown in the application
