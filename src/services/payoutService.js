@@ -21,7 +21,7 @@ const getPayouts = async (params = {}, tokenData) => {
     const totalCount = await knex("payout_requests")
       .count("* as total")
       .modify((queryBuilder) => {
-        if (status !== undefined) {
+        if (status) {
           queryBuilder.where("status", status);
         }
         if (type) {
